@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>LaTeX: 从新手到"TeXPert"(翻译版)LaTeX学习 | LaTeX学习</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" type="text/css" media="all" href="latex_from_beginner_to_texpert_zh_files/style.css">
+<link rel="pingback" href="http://latex.yo2.cn/xmlrpc.php">
+<link rel="alternate" type="application/rss+xml" title="LaTeX学习 » 订阅" href="http://latex.yo2.cn/feed">
+<link rel="alternate" type="application/rss+xml" title="LaTeX学习 » 评论订阅" href="http://latex.yo2.cn/comments/feed">
+<link rel="alternate" type="application/rss+xml" title="LaTeX学习 » LaTeX: 从新手到&quot;TeXPert&quot;(翻译版) 评论订阅" href="http://latex.yo2.cn/articles/latex_from_beginner_to_texpert_zh.html/feed">
+<script src="latex_from_beginner_to_texpert_zh_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="latex_from_beginner_to_texpert_zh_files/comment-reply.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://latex.yo2.cn/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://static.blogcn.com/wp-includes/wlwmanifest.xml"> 
+<link rel="index" title="LaTeX学习" href="http://latex.yo2.cn/">
+<link rel="start" title="LaTex学习 开站了" href="http://latex.yo2.cn/articles/hello-world.html">
+<link rel="prev" title="WordPress使用TeX" href="http://latex.yo2.cn/articles/wordpress-tex.html">
+<link rel="next" title="两个小孩的暴汗对白" href="http://latex.yo2.cn/articles/blog-08-5-1.html">
+<meta name="generator" content="WordPress 3.0">
+<link rel="canonical" href="http://latex.yo2.cn/articles/latex_from_beginner_to_texpert_zh.html">
+<link rel="shortlink" href="http://latex.yo2.cn/?p=629528">
+
+<!-- all in one seo pack 1.4.7.4 [78,148] -->
+<meta name="description" content="LaTeX: 从新手到TeXPert 原文: LaTeX: From beginner to TeXPert, 也可参见这里. 由LaTeX学习翻译, 并作出小量的修改,">
+<!-- /all in one seo pack -->
+<style type="text/css">body.ie-9 .main td.bb-r,body.ie-8 .main td.bb-r,body.firefox .main td.bb-r{background-position: -45px 0px;}</style><style type="text/css">.c-avatar-info {width:175px;position: absolute;left:500px;top:500px;font-size:12px;font-family:微软雅黑, Tahoma, Arial}.c-avatar-info a{padding:0}.c-avatar-info div.back{background:url("http://global.blogcn.com/images/avatar-info.png");padding:10px 11px 10px 16px;text-align:left;height:180px;overflow:hidden;font-size:12px;font-family:微软雅黑,Tahoma,Arial;color:#000;}.c-avatar-info .info {color:#999}* HTML .c-avatar-info div.back{background-image:none;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src="http://global.blogcn.com/images/avatar-info.png", sizingMethod="crop");}* HTML .c-avatar-info div.back div{position: relative;}.c-avatar-info .bottom{padding:0;background:url("http://global.blogcn.com/images/avatar-info.png");background-position: 0px -290px;height:10px;overflow:hidden;}* HTML .c-avatar-info .bottom{background-image:none;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src="http://global.blogcn.com/images/avatar-info-b.png", sizingMethod="crop");}.c-avatar-info h2,.avatar-info h2{font-size:18px;}.c-avatar-info h2 a,.avatar-info h2 a{text-decoration:none;color:#009BC7;font-weight:bold;font-family:微软雅黑,Tahoma,Arial;}.c-avatar-info h2 a:hover,.avatar-info h2 a:hover{text-decoration:none;color:#fff;background:#009BC7}.c-avatar-info h3,.avatar-info h3{font-size:14px;font-weight:bold;color:#000;}.c-avatar-info h1,.c-avatar-info h2,.c-avatar-info h3,.c-avatar-info p{margin:6px;}.avatar-info h1,.avatar-info h2,.avatar-info h3,.avatar-info p{margin:6px 0;}.avatar-info p{margin:0;} .c-avatar-info a {color:#009BC7; text-decoration:none} .c-avatar-info a:hover {background:#009BC7;color:#fff;}.c-avatar-info .b31,.avatar-info .b31{display:block;width:33%;float:left;overflow:hidden}.c-avatar-info .b31 strong,.avatar-info .b31 strong{font-size:16px}sup.vip{color:#ff6600;margin-left:6px;font-size:70%}sup.base{color:#91D134;margin-left:6px;font-size:70%}</style></head>
+
+<body class="single single-post postid-629528 firefox">
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="http://latex.yo2.cn/" title="LaTeX学习" rel="home">LaTeX学习</a>
+					</span>
+				</div>
+				<div id="site-description">一个LaTeX学习的博客</div>
+
+										<img src="latex_from_beginner_to_texpert_zh_files/path.jpg" alt="" height="198" width="940">
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu"><ul><li><a href="http://latex.yo2.cn/" title="首页">首页</a></li><li class="page_item page-item-647212"><a href="http://latex.yo2.cn/latex%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8" title="LaTeX快速入门">LaTeX快速入门</a></li><li class="page_item page-item-448117"><a href="http://latex.yo2.cn/dsitmap" title="网站地图">网站地图</a></li><li class="page_item page-item-646263"><a href="http://latex.yo2.cn/good-software" title="软件推荐">软件推荐</a></li></ul></div>
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="http://latex.yo2.cn/articles/wordpress-tex.html" rel="prev"><span class="meta-nav">←</span> WordPress使用TeX</a></div>
+					<div class="nav-next"><a href="http://latex.yo2.cn/articles/blog-08-5-1.html" rel="next">两个小孩的暴汗对白 <span class="meta-nav">→</span></a></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-629528" class="post-629528 post type-post hentry category-latex">
+					<h1 class="entry-title">LaTeX: 从新手到"TeXPert"(翻译版)</h1>
+
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://latex.yo2.cn/articles/latex_from_beginner_to_texpert_zh.html" title="13:03" rel="bookmark"><span class="entry-date">2008-04-27</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://latex.yo2.cn/articles/author/" title="View all posts by "></a></span>					</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<p>LaTeX: 从新手到"TeXPert"</p>
+<p>原文: <a target="_blank" href="http://generaldisarray.wordpress.com/2006/04/20/latex-from-beginner-to-texpert/" rel="bookmark">LaTeX: From beginner to TeXPert</a>, 也可参见<a href="http://latex.yo2.cn/articles/latex_from_beginner_to_texpert.html">这里</a>.</p>
+<p>由<a href="http://latex.yo2.cn/">LaTeX学习</a>翻译, 并作出小量的修改, 以支持中文.</p>
+<p>本文是介绍TeX排版系统, 但你阅读下面的信息后, 你将能够:</p>
+<ul>
+<li>下载和安装LaTeX(包括Windows, linux, 或者Mac系统)</li>
+<li>使用LaTeX创建简单的文档</li>
+<li>安装新的LaTeX宏包</li>
+<li>在LaTeX文档中插入表格和图像</li>
+<li>使用LaTeX的交互引用, 脚注和基本的参考文献用法</li>
+<li>在LaTeX文档中插入数学公式</li>
+</ul>
+<p>这些主题已经覆盖写文档的基本任务. 然而, 注意到, 但使用LaTeX系统的时候, 你可以很容易创建看起来非常专业的文档, 
+并且LaTeX是全面和可扩展的. 还有许多在这篇基础引导性文章没有提及的功能. 幸运的是, LaTeX的文档非常丰富. 如果你对碰到什么问题, 
+可以向你的老朋友Google寻求帮助.<br>
+<strong>什么是LaTeX?</strong></p>
+<p>LaTeX是一个排版系统, 它允许作者创建一个高质量的文档, 而不用过多关心格式, 分页, 
+对象的位置和其它一些将作者从写作上分心的格式设置. LaTeX的发音为 “lay-tech”, 它是原始排版系统TeX 
+(”tech”)的一个扩展. 你可以在Wikipedia上找到 <a target="_blank" href="http://en.wikipedia.org/wiki/TeX">TeX</a> 和 <a target="_blank" href="http://en.wikipedia.org/wiki/LaTeX">LaTeX</a> 的历史.</p>
+<p>也可以参加本站的介绍<a href="http://latex.yo2.cn/articles/what-is-tex.html" title="什么是TeX">什么是LaTeX</a>,<a href="http://latex.yo2.cn/articles/what-is-tex.html" title="什么是TeX">什么是TeX</a>.</p>
+<p>LaTeX在一个专业领域被广泛的使用. 在数学, 物理, 经济, 统计和其它一些学术和专业领域, 它们的文档需要经常使用LaTeX来排版数学符号, 因为LaTeX能简单而高质量地支持数学符号.一些出版公司也使用基础TeX的系统来排版文档.</p>
+<p>为什么要学习LaTeX, LaTeX的优缺点分析可参考本站的资源, <a href="http://latex.yo2.cn/articles/why-latex.html" title="LaTeX-劝学篇">LaTeX-劝学篇</a>和 <a href="http://latex.yo2.cn/articles/virtue-tex.html" title="TeX的优缺点">TeX的优缺点</a><br>
+<strong>LaTeX 是怎样工作的?</strong></p>
+<p>LaTeX与传统的字处理软件有下列两个基本的不同:</p>
+<ol>
+<li>一般地, 使用容易学的LaTeX的标记语言来写LaTeX文档, 而不是使用图形界面来确定格式[1].</li>
+<li>在输入文本之后需用LaTeX编译生成文档, 而不像其它字处理软件, 它可以使用下面的文档的总长度, 表格的数目等信息来优化表格, 图形, 断页等.</li>
+</ol>
+<p>下面是一个非常基本的LaTeX文档的例子:</p>
+<p><code>\documentclass{article}<br>
+\author{Your Name}<br>
+\title{Test Document}<br>
+\begin{document}<br>
+\maketitle<br>
+This is a test document<br>
+\end{document}</code></p>
+<p>使用任何一个LaTeX发行版, 保存上面的文本到一个后缀为 ".tex" 的文件, 然后用LaTeX来编译就可以生成一个文档了.</p>
+<p>LaTeX被设置成在不同的系统可得到同样的输出. 因此, 如果你发布上面的文本, 其他人可以使用某个LaTeX发行版的 , 而不用关注他的操作系统, 都将得到完全一样的结果. LaTeX可以输出各种格式的文件, 但最流行的是PDF格式.</p>
+<p><strong>如何得到LaTeX软件</strong></p>
+<p>从技术上来说, 你只需要LaTeX引擎(一些二进制的文件和库)就可以将简单的文本tex文件转化为优美的PDF文件. 
+LaTeX可以以命令行形式被使用, 因而*nix和Dos的支持者将觉得这非常好. 然而使用一个LaTeX前端编辑器将使得操作跟简单. 
+大多数的LaTeX前端编辑器本质上都是文本编辑器, 但还有下面的功能:</p>
+<ul>
+<li>编译LaTeX文档, 而不是使用命令行.</li>
+<li>让LaTeX语言跟容易的书写(命令补全, 创建模板化表格等).</li>
+</ul>
+<p>这这篇文档中, 我假设你已经有了一个LaTeX引擎和一个前端编辑器. 每个操作系统下你都有很多的LaTeX引擎和一个前端编辑器供选择. 
+我将描述最流行和最容易安装的开源的工具的安装. 不同发行版间的唯一区别是应用时的一些配置和用法不同, 你也可以自由地选择其它的发行版.</p>
+<p>对于版本的选取, 我这里推Window下推荐CTeX, 参见 <a href="http://latex.yo2.cn/articles/latex_ctex_beginer.html" title="写给初学者: CTeX安装与使用">写给初学者: CTeX安装与使用</a></p>
+<p>Linux 下使用推荐 texlive, 参见<a href="http://latex.yo2.cn/articles/linux-latex.html" title="ray2.0-GUN/Linux下成功安装latex+CJK">ray2.0-GUN/Linux下成功安装latex+CJK</a></p>
+<p>上面的两个链接也包含了对中文的支持, 建议没有用过LaTeX的看一下, 后面不会特别提到中文的设置了.</p>
+<p>接下来的介绍TeX发行版一般就可以跳过去了.</p>
+<p><em>Mac OS X系统</em></p>
+<p><strong>引擎.</strong> <a target="_blank" href="http://ii2.sourceforge.net/tex-index.html">gwTeX</a> 是OS X中拥有图形界面安装的开源LaTeX发行版. 在它的主页上选择一个镜像, 选在TeX包下载. 还可以安装一个额外的指南.当安装完毕,你还仅需一个前端编辑器.</p>
+<p>注: 由于资源时效性关系, 现在Mac OS&nbsp; X 下 的最流行的LaTeX发行版应该是 MacTeX. 参见<a target="_blank" href="http://bbs.ctex.org/viewthread.php?tid=43430&amp;extra=page%3D1">这里</a>.</p>
+<p><strong>前端编辑器.</strong> <a target="_blank" href="http://www.uoregon.edu/%7Ekoch/texshop/">TeXShop</a> 是OS X上的一个非常流行的前端编辑器. 安装只需要简单地将它拖到/Applications文件夹 . TeXShop 会自动的配置gwTeX, 所以如果你使用的是gwTeX引擎, 那你已经设置好.</p>
+<p>为了测试你使用的版本, 将前面的例子存为一个 .tex 格式文件, 然后用 TeXShop 打开你的文档, 再编译.如果进行顺利的话,将会打开一个新的输出窗口, 一个新的PDF文件(还有 log 文件) 会在你保存的文件目录下出现.</p>
+<p><em>Windows 系统<br></em></p>
+<p><strong>引擎</strong><strong>.</strong> MikTeX 是一个非常流行的开源发行版. 为了安装, <a target="_blank" href="http://miktex.org/Setup.aspx">访问这个页面</a> , 下载它的安装文件, 下载页面上也有额外的安装说明.</p>
+<p><strong>前端编辑器</strong><strong>.</strong> <a target="_blank" href="http://toolscenter.org/front_content.php?idcat=50">TeXnic Center</a> 是一个具有很多有帮助特性的开源编辑器. 就跟通常安装程序一样, 下载和允许安装文件, 完毕后有自动运行"向导".</p>
+<p>TeXnic center 会自动配置MikTeX. 为了测试的安装, 将前面的例子存为一个 .tex 格式文件,用TeXnic center 打开, 然后选择 <em>Build &gt; Current file .</em> 如何所有设置正确的华, 一个新的PDF文件(还有 log 文件)会在你保存的文件目录下出现.</p>
+<p><em>Linux 系统<br></em></p>
+<p>Linux 系统有它们自己的程序管理工具(例如apt-get, rpm 等), 安装 LaTeX 将依赖你的 Linux 发行版. 
+Ubuntu 用户可以通过 Synaptic Package Manager (一种安装包管理工具)安装LaTeX. Kile 
+是一个在KDE和Gnome下都流行和容易使用的编辑器 .</p>
+<p><em>关于文件格式的一点注记</em></p>
+<p>LaTeX 可以生成多种格式的输出文件, 包括 PDF 和 DVI (与设备独立的格式) 文件. 生存文件的格式依赖于是否使用PdfLaTeX或另一个程序来编译文件. 编辑器默认会创建 PDF 文件, 主要到改变相应的设置会影响输出文件的格式.</p>
+<p><strong>LaTeX 基础知识</strong></p>
+<p><em>LaTeX 命令<br></em></p>
+<p>LaTeX 命令通常是以一个反斜杠(backslash)开头, 和具有形式\command[options]{argument. 例如,</p>
+<blockquote>
+<p>\section{Introduction}</p>
+</blockquote>
+<p>将定义一个叫 “Introduction” 的新的小节. 符号“%” 定义一个注记, 这一行它后面的字符都将被认为是注记, 而被 LaTeX 忽略. 如果你需要在文档中输入字符“%” , 使用命令: \%.</p>
+<p>在 LaTeX 使用引号的方式有点不同. 为了插入一个引号, 使用标准的 "文本" , 就是两次字符 ` (位于键盘的左上方).</p>
+<p><em>导言区(preamble)</em></p>
+<p>文档中, 行 “\begin{document}” 之前的部分称为导言区. 一个典型的导言区可以像这样:</p>
+<blockquote>
+<p>\documentclass{article}<br>
+\usepackage{graphicx}<br>
+\title{Test}<br>
+\author{Test}<br>
+\date{}</p>
+</blockquote>
+<p>在上面的例子中:</p>
+<ul>
+<li>\documentclass{article} 告诉 LaTeX , 这个文件是的类型是文章 (article). 其它类型有: 书本(book), 信 ( letter) 和 演示文稿 ( slides) .</li>
+<li>\usepackage{graphicx} 告诉 LaTeX 使用 graphicx 宏包 , 它允许用户在文档中包含许多类型的图像. 将会在后面介绍宏包的用法.</li>
+<li>\title{} and \author{}显然就是定义文章的标题和作者.</li>
+<li>\date{} 告诉 LaTeX 留下一行生成日期. \date{April 2006}将会生成日期 “April 2006″ . 如果只使用 \date{} 将告诉 LaTeX 使用今天的日期.</li>
+</ul>
+<p>命令\documentclass{} 有一些参数. 例如, \documentclass[11pt,twocolumn]{article} 将文档的主体为设为两栏格式. 注意参数之间用逗号隔开. 其它的一些参数包括:</p>
+<ul>
+<li>oneside 或 twoside - 改变边界, 设置成单页或双页文档</li>
+<li>landscape - 将文档的格式从 portrait 改为 landscape.</li>
+<li>titlepage 或 notitlepage - 定义是否使用分离的标题页面, 或者标题, 作者和日题出现在文章的顶部.</li>
+</ul>
+<p><em>文档的主体(The document body)</em></p>
+<p>导言区后边, 也就是 \begin{document} 和 \end{document} 之间的部分是文档的主体. 大多数的 LaTeX 
+文档只是一个简单的纯文本. 为了开始一个新的段落, 输入两个回车. LaTeX 会自动忽略一个空白的行. 为了强制断行, 使用\\ .</p>
+<p><em>文档的结构 (Document structure)</em></p>
+<p>定义一个文档的结构可使用命令 \section{}. LaTeX 是基于结构的文档. 结构的标记有:</p>
+<ul>
+<li>\section{Name}</li>
+<li>\subsection{Name}</li>
+<li>\subsubsection{Name}</li>
+<li>\paragraph{Name}</li>
+</ul>
+<p>为了插入一个没有标号的小节, 使用命令 \section*{Name}. 章节的会自动的连续的编号.</p>
+<p>命令 \paragraph{}不是必须的, 除非你想为一个段落插入一个标题. 例子:</p>
+<blockquote>
+<p><strong>1 Section command</strong></p>
+<p><strong>Section star command</strong><br>
+this section is not numbered</p>
+<p><strong>2 Section command</strong><br>
+Test here the the numbering continuous normally</p>
+<p><strong>2.1 Subsection command</strong><br>
+Test here</p>
+<p><strong>Paragraph command</strong> this paragraph have a title.</p>
+</blockquote>
+<p><em>环境(Environments)</em></p>
+<p>环境是一块特殊的文本. 例如, <em>itemize</em> 和 <em>enumerate</em> 环境相应地创建项目和编号列表. 下面的标记:</p>
+<blockquote>
+<p>\begin{itemize}<br>
+\item First thing<br>
+\item Second thing<br>
+\item Third thing<br>
+\end{itemize}</p>
+<p>\begin{enumerate}<br>
+\item First numbered thing<br>
+\item Second numbered thing<br>
+\end{enumerate}</p>
+</blockquote>
+<p>将生成一个项目列表和接下来的一个编号列表.</p>
+<p>注意到环境都是以 \begin{environmentname} 开头和以 \end{environmentname} 结尾. 它们可以被嵌套, 所以一个项目列表可能包含另一个项目列表或者编号列表等.</p>
+<p>另外一下经常被使用的环境有:</p>
+<ul>
+<li>引用环境 (Quote): \begin{quote}…\end{quote} 创建一小节缩进的引用的文本</li>
+<li>Verbatim环境: \begin{verbatim} … \end{verbatim} 类似于HTML中的 <em>pre</em> . 在 verbatim 环境中, 文本将显示为等宽格式的字体和特殊字符将被忽略. 当书写源代码的时候, Verbatim 环境非常有用.</li>
+<li>Description 环境: \begin{description} \item[First item] text \end{description} 生成一个列表和或项目, 它有一个粗体的名字和之后悬挂缩进的文本</li>
+</ul>
+<p><em>改变字体的样式 (Modifying text styles)</em></p>
+<p>LaTeX 背后一个基本的思想是解决作者的格式问题. 然后, 有时还是需要手动得设置指定字体样式.</p>
+<ul>
+<li>插入粗体 (bold text), 使用 \textbf{text here}</li>
+<li>插入斜体 (italic text), 使用 \emph{text here}</li>
+<li>插入但等宽字体 (monospace text), 使用 \texttt{text here} (" tt " 代表打字机 (teletype)</li>
+<li>为了在句子中使用 verbatim 文本, 使用 \verb | your text here | . 注意可以使用任意的分界符, 例如\verb+your text here+ 将显示同样的效果.</li>
+</ul>
+<p><a href="http://latex.yo2.cn/articles/category/latex%e6%96%b0%e6%89%8b" title="查看latex新手下的所有日志">latex新手</a> 可以去这个页面找到跟多的信息, 还有更多<a href="http://latex.yo2.cn/articles/category/latex%e6%95%99%e7%a8%8b" title="查看latex教程下的所有日志">latex教程</a>.<br>
+<strong>宏包(Packages)</strong></p>
+<p>使用宏包可以扩展 LaTeX 的 功能. 宏包的安装主要分为下面两步:</p>
+<ol>
+<li>用 LaTeX 运行 .ins 文件来生成 .sty 和 .cls 文件</li>
+<li>将两个新创建的文件拷贝到适当的目录下, 然后更新 LaTeX 数据库</li>
+</ol>
+<p>但是, 也有一些例外. 文件类型 .sty 和 .cls 分别代表 样式 (style) 和 类 (class). 如果一个宏包不是 
+.ins 格式而是 .sty 和 .cls 文件, 则不需要用LaTeX处理, 直接跳到第二步. 另外, 当用LaTeX处理 .ins 
+文件时候, 通常会生成一个 .dtx 文件. 这个文件可以通过LaTeX来创建这个宏包的手册.</p>
+<p>注意: 用 LaTeX 处理宏包文件, 只需要用你的LaTeX前端编辑器打开, 然后按通常处理一个 tex 文件编译.</p>
+<p><strong>OS X.</strong> 为了在gwTeX下安装一个新的宏包, 按照前面的方法操作, 然后将 sty, cls 和其它文件移到 ~/Library/texmf. 如果这个目录不存在, 那么创建它.</p>
+<p><strong>Windows.</strong> 在 PC 上使用 MikTeX 安装宏包的一个最简单方式是使用 MikTeX 
+宏包管理器, 可以在Start Menu 上找到. 只需要打开宏包管理器, 选择一个镜像, 选择你要安装的宏包. MikTeX 
+将会处理余下的事情. 使用 MikTeX 的另一个优点是当你编译一个 .tex 文件的时需要一个你机器上没有安装的宏包, 
+它将自动提示你去下载宏包.</p>
+<p>接下来, 介绍两个流行的宏包: graphicx 和 gemetry . 这些宏包已经在 gwTeX 和 MikTeX 上默认安装了, 而不需要另外下载安装它们.</p>
+<p><em>graphicx 宏包</em></p>
+<p>graphicx 宏包用于在 LaTeX 文档插入图像. 为了使用它, 首先在文档的导言区加上命令 \usepackage{graphicx}. 然后使用下面的命令插入图形.</p>
+<blockquote>
+<p>\includegraphics[options]{filename.png}</p>
+</blockquote>
+<p>graphicx 宏包支持许多文件类型, 包括 PDF, PNG 和 JPG. 注意此时需要用 PdfLaTeX 编译你的文档. 它的主要参数有:</p>
+<ul>
+<li>width=Xin</li>
+<li>height=Xin</li>
+<li>scale=X (Where x is between 0 and 1)</li>
+</ul>
+<p><em>geometry宏包</em></p>
+<p>用 LaTeX 处理格式化的文档是非常简单的, 但你需要改变它的默认格式的时候就变得有点复杂了. 使用 geometry 宏包就改变你文档的某些设置, 包括边距等. 下边是一个将四周边距改为 1 in 的例子 :</p>
+<blockquote>
+<p>\usepackage[margin=1in]{geometry}</p>
+</blockquote>
+<p><em>其它一些宏包</em></p>
+<p>如果你想修改标准的 LaTeX 设置, 这需要一些宏包来帮助你. 为了学习更多的宏包知识, 可以访问综合的 TeX 文档网站(<a target="_blank" href="http://www.ctan.org/">CTAN</a>).</p>
+<p>关于插图的更详细的介绍可参见 <a href="http://latex.yo2.cn/articles/latex-graph.html" title="LaTeX2e插图指南">LaTeX2e插图指南</a></p>
+<p>中文有<a target="_blank" href="http://bbs.ctex.org/">CTeX论坛</a>是推荐大家去查考资料和提问的.</p>
+<p><strong>图形和表格</strong></p>
+<p>图形和表格都是 LaTeX 中的环境, 然而它们有一些特殊的属性, 例如命令 \caption{}, 这将生成图形和表格的标题. 它们被称为浮动对象, 因为它们在最终编译生成文档中的位置依赖当前 LaTeX 样式的算法.</p>
+<p><em>图形 (Figures)</em></p>
+<p>为了插入一个图形, 使用</p>
+<blockquote>
+<p>\begin{figure}[hbtp]<br>
+\caption{Figure name}<br>
+\begin{center}<br>
+\includegraphics{filename.pdf}<br>
+\end{center}<br>
+\label{your-reference-key}<br>
+\end{figure}</p>
+</blockquote>
+<p>在上面的代码中,</p>
+<ul>
+<li>\begin{figure} 只是告诉 LaTeX 现在开始一个图形 (figure) 环境</li>
+<li>[hbtp] 决定 LaTeX 如何放置这个图形 (当前位置here (h), 底部bottom (b), 顶部top(t), 
+页面page(p)). LaTeX 首先会尝试在将图形插入到当前位置 (tex 文件中的插入点), 如果没有足够的空间或者其它审美考虑, 
+它将尝试把图形先放在当前页面的底部, 然后是顶部, 最后是一个特殊页面来放置这个浮动对象. 如果强制图形只出现在原来的位置, 使用命令 
+\begin{figure}[h], 而忽略其它参数 b, p 和 t</li>
+<li>\caption{Figure name}生成图形的名称</li>
+<li>\begin{center} 只是告诉 LaTeX 将图形放置在页面的中间. 不要忘记在结束 figure 环境前结束 centering 环境.</li>
+<li>\includegraphics{…} 指定你要插入图形文件的位置</li>
+<li>\label{your-reference-key} 是一个标签, 它将允许你在文本中引用这个图形. 例如, 你的图形标签为 "fig1" , 当你需要引用它时输入 \ref{fig1}</li>
+</ul>
+<p><em>表格 (Tables)</em></p>
+<p>LaTeX 中一个浮动表格由两个环境组成: 表格, 在文本中浮动的实体, 和 tabular (制表的内容). 例如,</p>
+<blockquote>
+<p>\begin{table}[hbtp]<br>
+\caption{This table is an example}<br>
+\begin{center}<br>
+\begin{tabular}{c|cc}<br>
+First row, first column &amp; First row second column &amp; First row, third column \\ \hline<br>
+Second row, first column &amp; Second row, second column &amp; Second row, third column \\<br>
+Third row, first column &amp; Third row, second column &amp; Third row, third column \\<br>
+\multicolumn{3}{c}{…}<br>
+\end{tabular}<br>
+\end{center}<br>
+\label{exampletable}<br>
+\end{table}</p>
+</blockquote>
+<p>除了代码 \begin{tabular} … \end{tabular} 之间的内容外它的意思跟前面图形环境的描述是一样的. 下面我们来看 tabular 环境是怎样工作的:</p>
+<ul>
+<li>\begin{tabular}{c|cc} 告诉 LaTeX 开始一个新的包含3个居中列的 tabular 环境. 
+第一个"c"之后的竖线 (”|”) 告诉 LaTeX 第一列有一个垂直的边线. 使用{lcrr}能创建 4 列, 第一列左对其, 第二列居中, 
+第三列和第四列右对齐</li>
+<li>表格单元用符号 “&amp;”分离, 表格行用符号“\\”分离.</li>
+<li>\hline 生成一条水平线</li>
+<li>\multicolumn{3}{c}{Text here} 创建一个有 3 列的行, 居中格式, 并且包含文本 “Text here”</li>
+</ul>
+<p>创建和插入表格还有一些跟复杂的参数, 但是上面的例子应该已经包含90%的应用了.[2]</p>
+<p><strong>注释 (Annotations)</strong></p>
+<p>LaTeX 能够自动创建一些重要的注释, 例如脚注, 交叉引用, 表格的目录和参考文献. 注意到下面的命令需要 LaTeX 自动对正文元素进行计数, 从而需要 LaTeX 需要运行两次才能显示效果.</p>
+<p><em>脚注(Footnotes)</em></p>
+<p>为了插入一个脚注, 只需要输入 \footnote{Footnote text here}. LaTeX 自动插入一个脚注数目和文本.[3]</p>
+<p><em>交叉引用 (Cross references)</em></p>
+<p>为了引用一个表格或图形的标签, 使用 \ref{your-reference-key} 其中 “your-reference-key” 是表格或图形环境中命令 \label{your-reference-key} 的参数.</p>
+<p><em>表格的目录 (Table of contents)</em></p>
+<p>为了插入一个表格目录, 在文档的开始的地方使用 \tableofcontents . (你必须运行 LaTeX 两次来获得表格目录和正确的引用.)<br>
+<em>参考文献(Bibliography)</em></p>
+<p>为了创建一个参考文献列表, 在你文档的最后, 使用</p>
+<blockquote>
+<p>\begin{thebibliography}{99}<br>
+….<br>
+\bibitem{key1} Disarray, General. 2006. “\LaTeX{}: From beginner to \TeX
+ pert.” \emph{General Disarray Blog}. Available online at 
+\textt{http://generaldisarray.wordpress.com}. ….<br>
+\end{thebibliography}</p>
+</blockquote>
+<p>你必须手动输入参考文献的项目. 在正文中引用一个项目, 使用 \cite{key}, 参数{99}告诉 LaTeX 这是一个最多 99 个项目的参考文献. LaTeX 必须知道这个参数才能正确地调整参考文献项目左边的编号.</p>
+<p>一个跟有效的创建参考文献的方法是使用 BibTeX, 它允许你维护一个引用项目的数据库, 当需要引用它们时调用这个数据库. 
+也有一些图形化的工具来管理的你引用数据库, 所以你需要要努力去对引用加代码, 而只是将它们改成不同的格式. 然而 BibTeX 
+在编译的时候变得比较复杂, 作为一个介绍, 你可以看在<a target="_blank" href="http://dataninja.wordpress.com/2006/01/01/introduction-to-bibtex/">这个</a>页面.</p>
+<p>BibTeX的用法也可参见页面<a href="http://latex.yo2.cn/articles/latex-thebibliography.html" title="LaTeX之参考文献的写法">LaTeX之参考文献的写法</a></p>
+<p><strong>插入数学公式 (Inserting mathematics)</strong></p>
+<p>在 LaTeX 插入数学公式的方法有几种. 最通常用的方法是内联记号(inline notation) 和 displaymath 环境 (displaymath environment).</p>
+<p><em>内联 记号(Inline)</em></p>
+<p>在一个段落中插入数学符号, 而有不影响其它文本的格式, 将数学公式用 $ 符号括起来. 例如, , $a^2+b^2=c^2$ 是我们熟悉的公式.</p>
+<p><em>Display math</em></p>
+<p>displaymath 环境让你数学符号单独占一行. 代码</p>
+<blockquote>
+<p>\[<br>
+a^2+b^2=c^2<br>
+\]</p>
+</blockquote>
+<p>将创建一个段落分割和一个居中的方程.</p>
+<p><em>Equation</em></p>
+<p>equation 环境可以用来数学公式的编号和引用标记, 例如,</p>
+<blockquote>
+<p>\begin{equation}<br>
+a^2+b^2=c^2<br>
+\label{pythag}<br>
+\end{equation}</p>
+</blockquote>
+<p>就像 displaymath 生成同样的方程, 但是它还会在右边生成一个编号, 并且你可以使用 \ref{pythag}来引用这个方程.</p>
+<p><em>Equation array</em></p>
+<p>eqnarray 环境能够允许你输入多行的公式, 并设定对齐点. 例如,</p>
+<blockquote>
+<p>\begin{eqnarray}<br>
+a&amp;=&amp;b+c\\<br>
+d&amp;=&amp;e+f<br>
+\end{eqnarray}</p>
+</blockquote>
+<p><em>数学记号 (Mathematical notation)</em></p>
+<p>有一些命令来插入一些特殊的数学算子和符号. 它们可以在网上很容易的找到, 如果你不能想出一个有效的命令, Google查找一下. 下面有一些经常用的命令:</p>
+<p>希腊字母: 一般来说, 它就是拼写的单词. 例如 \beta, \gamma 和 \epsilon. 大写则使用 \Gamma.</p>
+<p>特殊符号 (Misc symbols): \leftarrow (使用 \Leftarrow 得到一个双向肩头), 
+\rightarrow, etc., \leftrightarrow (&lt;==&gt;, if and only if), &lt;, 
+&gt;, \leq (less than or equal to), \geq (greater than or equal to)</p>
+<p>指数和分量 (Indexing and exponents): 下标使用下划线 (x_i) 和 上标使用 “^” (a^2). 为了使用 
+“i sub j comma k” 你只需要输入 “i_{j,k}” 来告诉 LaTeX “j,k”都是下标. 在LaTeX 
+中括号通常表示一组内容, 而它本身并不会在文档中出现.</p>
+<p>另外的一些算子: \sum{1/x} or \sum_{i=1}^{\infty}{x_i}, \prod (the product), \coprod (the coproduct), \sin, \log, \max, etc.<em><br></em><br>
+修饰符号 (Decorations): \hat{x}, \tilde{x} , \overline{x}, \underline{x}, \overrightarrow{x}, \overbrace{x}, \underbrace{x}, \vec{x}</p>
+<p>分数 (Fractions): \frac{a}{b} puts a over b.</p>
+<p>括号 (Brackets): For brackets use “(”, “[” or \lbrace and \rbrace for 
+“{” and “}”. However, if the notation that your typing is not inline, 
+use \left( &lt;math here&gt; \right) or \left\lbrace &lt;math here&gt; 
+\right\rbrace.</p>
+<p>矩阵 (Matrices) : 为了输入一个矩阵, 在display 或者 equation 环境下, 使用</p>
+<blockquote>
+<p>\left[ \begin{array}{ccc}<br>
+a &amp; b &amp; c \\<br>
+d &amp; e &amp; f<br>
+\end{array}\right]</p>
+</blockquote>
+<p>注意array 环境的使用跟前面提到的表格环境很相似.</p>
+<p>关于跟多的符号和算子, 可以看考 <a target="_blank" href="http://www.fi.uib.no/Fysisk/Teori/KURS/WRK/TeX/symALL.html">这里</a>.</p>
+<p><strong>进一步的参考 (For further reference)</strong></p>
+<p>上面的介绍只是 LaTeX 的一部分功能, 还有很多没有介绍, 推荐一个非常好的文档 <a target="_blank" href="http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf">The Not-So-Short Introduction to LaTeX</a> (pdf).</p>
+<p>中文版本可以在这里下载<a target="_blank" href="http://bbs.ctex.org/viewthread.php?tid=40736&amp;extra=page%3D1" style="font-weight: bold; color: red">lshort-zh-cn 4.20 下載</a></p>
+<p><strong>Download<br></strong><br>
+这个文档的英文版本也可在这里下载 <a target="_blank" href="http://disinterested.googlepages.com/TeXpert.pdf">PDF file</a>.<br>
+<strong><br>
+注记(Notes)</strong></p>
+<p>[1] 尽管LaTeX是用命令工作, 但例如 Scientific Word 是在图形界面上操作, 和 <a target="_blank" href="http://www.lyx.org/">LyX</a> 是一个非常好的开源, 基于 LaTeX 的 what-you-see-is-what-you-mean 的字处理系统, 它采用图形化界面但也允许使用LaTeX命令. 关于Lyx的介绍可一参见这里: <a href="http://latex.yo2.cn/articles/lyx-latex-cjk.html" title="LyX 和 LaTeX CJK 的配合">LyX 和 LaTeX CJK 的配合</a>, <a href="http://latex.yo2.cn/articles/lyx-xetex.html" title="LyX和xetex中文的配置方法">LyX和xetex中文的配置方法</a>.<br>
+[2] OpenOffice 可是使用 Calc2LaTeX 来将 Calc spreadsheets转化为 LaTeX 表格tables. MS Office 用户可尝试工具 <a target="_blank" href="http://www.jam-software.com/freeware/index.shtml">Excel2LaTeX</a>. 这些工具都是跨平台的 .<a href="http://latex.yo2.cn/articles/latex-excel2latex.html" title="LaTeX使用excel2latex插入表格">LaTeX使用excel2latex插入表格</a><br>
+[3] 为了创建一个贡献(attribution)脚注, 第一个脚注将用星号作标记, 使用 \thanks{text here}命令.</p>
+<p>-----------</p>
+<p>更多资料在本网站的地图上查找</p>
+<p><a href="http://latex.yo2.cn/dsitmap">http://latex.yo2.cn/dsitmap</a></p>
+<h2 class="posttitle"><a href="http://latex.yo2.cn/articles/latex_blog.html" rel="bookmark" title="Permanent link to 充分利用本站资源, 建议先读一下这里">充分利用本站资源, 建议先读一下这里</a></h2>
+
+											</div><!-- .entry-content -->
+
+
+					<div class="entry-utility">
+						This entry was posted in <a href="http://latex.yo2.cn/articles/category/latex%e6%95%99%e7%a8%8b" title="查看 latex教程 中所有日志" rel="category tag">latex教程</a>. Bookmark the <a href="http://latex.yo2.cn/articles/latex_from_beginner_to_texpert_zh.html" title="Permalink to LaTeX: 从新手到&quot;TeXPert&quot;(翻译版)" rel="bookmark">permalink</a>.						<span id="_e_p_629528" style="display:none"><span class="edit-link"><a class="post-edit-link" href="http://latex.yo2.cn/wp-admin/post.php?action=edit&amp;post=629528" title="编辑日志">编辑</a></span></span><script language="javascript">if(document.cookie.indexOf("wp-settings")!=-1)document.getElementById("_e_p_629528").style.display='';</script>					</div><!-- .entry-utility -->
+									</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="http://latex.yo2.cn/articles/wordpress-tex.html" rel="prev"><span class="meta-nav">←</span> WordPress使用TeX</a></div>
+					<div class="nav-next"><a href="http://latex.yo2.cn/articles/blog-08-5-1.html" rel="next">两个小孩的暴汗对白 <span class="meta-nav">→</span></a></div>
+				</div><!-- #nav-below -->
+
+				
+			<div id="comments">
+
+
+			<h3 id="comments-title">One Response to <em>LaTeX: 从新手到"TeXPert"(翻译版)</em></h3>
+
+
+			<ol class="commentlist">
+					<li class="post pingback">
+		<p>Pingback: <a href="http://latex.yo2.cn/articles/latex-learning0.html" rel="external nofollow" class="url">LaTeX入门教程 « LaTeX学习</a> <a class="comment-edit-link" id="_e_c_270531" style="display:none" href="http://latex.yo2.cn/wp-admin/comment.php?action=editcomment&amp;c=270531" title="编辑评论">（编辑）</a><script language="javascript">if(document.cookie.indexOf("wp-settings")!=-1)document.getElementById("_e_c_270531").style.display='';</script></p>
+	</li>
+			</ol>
+
+
+
+								<div id="respond">
+				<h3 id="reply-title">发表评论 <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://latex.yo2.cn/articles/latex_from_beginner_to_texpert_zh.html#respond" style="display:none;">取消回复</a></small></h3>
+									<form action="http://latex.yo2.cn/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">您的电子邮箱不会被公开。 标记为 <span class="required">*</span> 的区域必须填写</p>							<p class="comment-form-author"><label for="author">名称</label> <span class="required">*</span><input class=" text" id="author" name="author" size="30" aria-required="true" type="text"></p>
+<p class="comment-form-email"><label for="email">电子邮箱</label> <span class="required">*</span><input class=" text" id="email" name="email" size="30" aria-required="true" type="text"></p>
+<p class="comment-form-url"><label for="url">网址</label><input class=" text" id="url" name="url" size="30" type="text"></p>
+												<p class="comment-form-comment"><label for="comment">评论</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">您可以使用这些 <abbr title="HyperText Markup Language">HTML</abbr> 标签和属性： <code>&lt;a
+ href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; 
+&lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del 
+datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;strike&gt; 
+&lt;strong&gt; </code></p>						<p class="form-submit">
+							<input class=" submit" name="submit" id="submit" value="发表评论" type="submit"><img class="submit-right-border" src="data:image/gif;base64,R0lGODlhCgAKAIAAAP%2f%2f%2fwAAACH5BAEAAAAALAAAAAAKAAoAQAIIhI%2bpy%2b0PYysAOw%3d%3d">
+							<input class=" hidden" name="comment_post_ID" value="629528" id="comment_post_ID" type="hidden">
+<input class=" hidden" name="comment_parent" id="comment_parent" value="0" type="hidden">
+						</p>
+											<input class=" hidden" id="AuthSign" name="AuthSign" type="hidden"></form>
+							</div><!-- #respond -->
+						
+</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="search-2" class="widget-container widget_search"><form role="search" method="get" id="searchform" action="http://latex.yo2.cn/">
+	<div><label class="screen-reader-text" for="s">搜索：</label>
+	<input class=" text" name="s" id="s" type="text">
+	<input class=" submit" id="searchsubmit" value="搜索" type="submit"><img class="submit-right-border" src="data:image/gif;base64,R0lGODlhCgAKAIAAAP%2f%2f%2fwAAACH5BAEAAAAALAAAAAAKAAoAQAIIhI%2bpy%2b0PYysAOw%3d%3d">
+	</div>
+	</form></li>		<li id="recent-posts-2" class="widget-container widget_recent_entries">		<h3 class="widget-title">最新日志</h3>		<ul>
+				<li><a href="http://latex.yo2.cn/articles/tex-macro-examples.html" title="两个 TeX 宏例子">两个 TeX 宏例子</a>
+				</li>
+				<li><a href="http://latex.yo2.cn/articles/debian-pcmanfm-095.html" title="Debian 安装 pcmanfm 0.9.5">Debian 安装 pcmanfm 0.9.5</a>
+				</li>
+				<li><a href="http://latex.yo2.cn/articles/lablatex.html" title="在线编译LaTeX">在线编译LaTeX</a>
+				</li>
+				<li><a href="http://latex.yo2.cn/articles/blog100320.html" title="日志100320">日志100320</a>
+				</li>
+				<li><a href="http://latex.yo2.cn/articles/latex-learning-100320.html" title="LaTeX学习笔记">LaTeX学习笔记</a>
+				</li>
+				<li><a href="http://latex.yo2.cn/articles/nokia-e63.html" title="Nokia E63参数与使用技巧">Nokia E63参数与使用技巧</a>
+				</li>
+				<li><a href="http://latex.yo2.cn/articles/gentoo-kernel-update.html" title="Gentoo 升级内核">Gentoo 升级内核</a>
+				</li>
+				<li><a href="http://latex.yo2.cn/articles/gentoo-install-ibus.html" title="Gentoo 上安装ibus输入法">Gentoo 上安装ibus输入法</a>
+				</li>
+				<li><a href="http://latex.yo2.cn/articles/latex-introduction0.html" title="LaTeX 教程, LaTEX入门教程">LaTeX 教程, LaTEX入门教程</a>
+				</li>
+				<li><a href="http://latex.yo2.cn/articles/latex-math-equation.html" title="LaTeX之公式及编号">LaTeX之公式及编号</a>
+				</li>
+				</ul>
+		</li><li id="recent-comments-2" class="widget-container widget_recent_comments"><h3 class="widget-title">最新评论</h3><ul id="recentcomments"><li class="recentcomments">xushaohua 发表于《<a href="http://latex.yo2.cn/articles/linux-blog-1.html#comment-274738">停止折腾Linux</a>》</li><li class="recentcomments"><a target="_blank" href="http://zhengwen0103.blog.edu.cn/" rel="external nofollow" class="url">zhengwen</a> 发表于《<a href="http://latex.yo2.cn/articles/latex-shumo.html#comment-274731">数模论文LaTeX模板</a>》</li><li class="recentcomments"><a target="_blank" href="http://billwsy.com/" rel="external nofollow" class="url">BillWSY</a> 发表于《<a href="http://latex.yo2.cn/articles/wordpress-tex.html#comment-274730">WordPress使用TeX</a>》</li><li class="recentcomments">好 发表于《<a href="http://latex.yo2.cn/articles/math-conditional-expectation.html#comment-274718">谈条件期望的直观</a>》</li><li class="recentcomments">AB 发表于《<a href="http://latex.yo2.cn/articles/good-software.html#comment-274687">软件推荐</a>》</li></ul></li><li id="archives-2" class="widget-container widget_archive"><h3 class="widget-title">存档页</h3>		<ul>
+			<li><a href="http://latex.yo2.cn/articles/2010/05" title="2010年05月">2010年05月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2010/03" title="2010年03月">2010年03月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2009/11" title="2009年11月">2009年11月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2009/10" title="2009年10月">2009年10月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2009/09" title="2009年09月">2009年09月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2009/08" title="2009年08月">2009年08月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2009/06" title="2009年06月">2009年06月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2009/04" title="2009年04月">2009年04月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2008/10" title="2008年10月">2008年10月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2008/09" title="2008年09月">2008年09月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2008/07" title="2008年07月">2008年07月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2008/06" title="2008年06月">2008年06月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2008/05" title="2008年05月">2008年05月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2008/04" title="2008年04月">2008年04月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2008/03" title="2008年03月">2008年03月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2007/12" title="2007年12月">2007年12月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2007/11" title="2007年11月">2007年11月</a></li>
+	<li><a href="http://latex.yo2.cn/articles/2007/10" title="2007年10月">2007年10月</a></li>
+		</ul>
+</li><li id="categories-2" class="widget-container widget_categories"><h3 class="widget-title">分类</h3>		<ul>
+	<li class="cat-item cat-item-76551"><a href="http://latex.yo2.cn/articles/category/latex%e5%bf%83%e5%be%97" title="查看latex心得下的所有日志">latex心得</a>
+</li>
+	<li class="cat-item cat-item-76532"><a href="http://latex.yo2.cn/articles/category/latex%e6%95%99%e7%a8%8b" title="查看latex教程下的所有日志">latex教程</a>
+</li>
+	<li class="cat-item cat-item-76526"><a href="http://latex.yo2.cn/articles/category/latex%e6%96%b0%e6%89%8b" title="查看latex新手下的所有日志">latex新手</a>
+</li>
+	<li class="cat-item cat-item-77869"><a href="http://latex.yo2.cn/articles/category/latex%e6%a8%a1%e6%9d%bf" title="查看latex模板下的所有日志">latex模板</a>
+</li>
+	<li class="cat-item cat-item-76527"><a href="http://latex.yo2.cn/articles/category/latex%e8%b5%84%e6%ba%90" title="查看latex资源下的所有日志">latex资源</a>
+</li>
+	<li class="cat-item cat-item-108228"><a href="http://latex.yo2.cn/articles/category/linux" title="查看linux下的所有日志">linux</a>
+</li>
+	<li class="cat-item cat-item-108536"><a href="http://latex.yo2.cn/articles/category/math" title="查看math下的所有日志">math</a>
+</li>
+	<li class="cat-item cat-item-108166"><a href="http://latex.yo2.cn/articles/category/pdf%e7%9b%b8%e5%85%b3" title="查看PDF相关下的所有日志">PDF相关</a>
+</li>
+	<li class="cat-item cat-item-76372"><a href="http://latex.yo2.cn/articles/category/tex%e4%bb%8b%e7%bb%8d" title="查看TeX介绍下的所有日志">TeX介绍</a>
+</li>
+	<li class="cat-item cat-item-82101"><a href="http://latex.yo2.cn/articles/category/tex%e7%9b%b8%e5%85%b3" title="查看TeX相关下的所有日志">TeX相关</a>
+</li>
+	<li class="cat-item cat-item-76633"><a href="http://latex.yo2.cn/articles/category/%e6%97%a5%e5%bf%97" title="查看日志下的所有日志">日志</a>
+</li>
+		</ul>
+</li><li id="meta-2" class="widget-container widget_meta"><h3 class="widget-title">功能</h3>			<ul>
+						<li><span id="_loginout"><a href="http://latex.yo2.cn/wp-login.php">登录</a></span><script language="javascript">if(document.cookie.indexOf("wp-settings")!=-1 && document.getElementById("_loginout"))
+setTimeout(modif_loginout,300);function modif_loginout(){document.getElementById("_loginout").parentNode.parentNode.innerHTML='<li><a href="/wp-admin/">管理首页</a></li><li><a href="http://latex.yo2.cn/wp-login.php?action=logout&amp;_wpnonce=5daae5d75c">退出</a>';}</script></li>
+			<li><a href="http://latex.yo2.cn/feed" title="订阅本站 RSS 2.0">日志 <abbr title="RSS">RSS</abbr></a></li>
+			<li><a href="http://latex.yo2.cn/comments/feed" title="所有日志的评论 RSS">评论 <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a target="_blank" href="http://blogcn.com/" title="基于 WordPress，完美的个人信息发布平台。">中国博客网</a></li>
+						</ul>
+</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="site-info">
+				<a href="http://latex.yo2.cn/" title="LaTeX学习" rel="home">
+					LaTeX学习				</a>
+			</div><!-- #site-info -->
+
+			<div id="site-generator">
+								<a target="_blank" href="http://blogcn.com/" title="Semantic Personal Publishing Platform" rel="generator">
+					Proudly powered by BlogCN.com - WordPress.				</a>
+			</div><!-- #site-generator -->
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+
+<style type="text/css">.MsoNormal{padding:0;margin:0}</style><script language="javascript">var keywds = document.getElementsByTagName("*");for (var i=0; i<keywds.length; i++){if((keywds[i].tagName == 'I' || keywds[i].tagName == 'U' || keywds[i].tagName == 'B') && keywds[i].style.display=='none' && keywds[i].innerHTML.length == 55)keywds[i].innerHTML = '';if(typeof(keywds[i].title)=='string' && keywds[i].title.length > 55 && ((j=keywds[i].title.toLowerCase().indexOf('<i'))>0|| (j=keywds[i].title.toLowerCase().indexOf('<u'))>0||(j=keywds[i].title.toLowerCase().indexOf('<b'))>0) && (k=keywds[i].title.indexOf('>',j+30))>0)keywds[i].title = keywds[i].title.substring(0,j)+keywds[i].title.substring(k+1,keywds[i].title.length);if(typeof(keywds[i].alt)=='string' && keywds[i].alt.length > 55 && ((j=keywds[i].alt.toLowerCase().indexOf('<i'))>0|| (j=keywds[i].alt.toLowerCase().indexOf('<u'))>0||(j=keywds[i].alt.toLowerCase().indexOf('<b'))>0) && (k=keywds[i].alt.indexOf('>',j+30))>0)keywds[i].alt = keywds[i].alt.substring(0,j)+keywds[i].alt.substring(k+1,keywds[i].alt.length);}var anchors = document.getElementsByTagName('a');for (var i=0; i<anchors.length; i++){var tmp = anchors[i].href.toLowerCase();if(tmp.indexOf('me.yo2.cn')==-1 && tmp.indexOf('http://')==0 && tmp.indexOf('http://latex.yo2.cn') == -1 && tmp.indexOf('.gif') && tmp.indexOf('.jpg') && tmp.indexOf('.png') && tmp.indexOf('.bmp')){anchors[i].target = '_blank';}}</script><style type="text/css">.submit-right-border,.blue-right-border{display:none;}</style><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-32497116-2']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript';ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script> <script language="javascript" src="latex_from_beginner_to_texpert_zh_files/main.js"></script><script language="javascript" src="latex_from_beginner_to_texpert_zh_files/a.htm"></script>
+<div style="display: none;" class="c-avatar-info" id="avatar-info"><div class="back"><div><h2><a href="#" id="_avatar_info_username" target="id">...<sup class="vip"></sup></a></h2><p class="info" id="_avatar_info_areas">. · . · . </p><p><span class="b31" id="_avatar_info_folow_d"><strong>0</strong><br>关注</span><span class="b31" id="_avatar_info_fans_d"><strong>0</strong><br>粉丝</span><span class="b31" id="_avatar_info_point_d"><strong>0</strong><br>分享</span></p><div class="fix"></div><p></p><h3><span style="float:right;text-align:right;color:#999" id="_avatar_info_follow_link"></span>心情</h3><p><a href="#" id="_avatar_info_mood" target="id">...</a></p></div></div><div class="bottom"></div></div></body></html>
