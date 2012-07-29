@@ -1,22 +1,38 @@
-\documentclass{article}
-\usepackage{CJK}
+﻿% a4paper - A4纸  11pt -字体 twoside -双面 openany -新章节可在偶数页开始
+\documentclass[a4paper,11pt,twoside,openany]{article}
+%\usepackage{CJK}
 \usepackage{geometry}
+\usepackage{amsmath}%调用数学包
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
-\usepackage{indentfirst}%��������
+\usepackage{indentfirst}%设置缩进
+\usepackage{anysize}%设置16k
+\papersize{26cm}{18.4cm}%设置16k
+\marginsize{2.5cm}{2.1cm}{2cm}{2cm} %设置16k
+\usepackage{fontspec}%使用xetex
+\setmainfont[BoldFont=黑体]{宋体}               % 使用系统默认字体
+\XeTeXlinebreaklocale "zh"                      % 针对中文进行断行
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt  % 给予TeX断行一定自由度
+\linespread{1.5}                                % 1.5倍行距
 
+\begin{document}
+\tableofcontents
 \author{Your Name}
 \title{Test Document}
-\begin{document}
-%\setlength{\parindent}{2em}%��������
 \maketitle
+\today %当日时间
+
+%\setlength{\parindent}{2em}%设置缩进
+
 This is a test document
-\
-\begin{CJK*}{GBK}{song}
+\\%换行
+%\begin{CJK*}{GBK}{song}
 
-����һ���ҵ���ѧ��ʽ\[\int_a^b f(x)dx\]
+测试一下我的数学公式\[\int_a^b f(x)dx\]
 
-fsdfsdfs
-\end{CJK*}
+到这里
+\footnote{一段的脚注}
+继续写
+%\end{CJK*}
 
 \end{document}
