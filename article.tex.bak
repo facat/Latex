@@ -3,6 +3,7 @@
 %\usepackage{CJK}
 \usepackage{geometry}
 \usepackage{amsmath}%调用数学包
+\usepackage{ccmap}                      % 使pdfLatex生成的文件支持复制等
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
 \usepackage{indentfirst}%设置缩进
@@ -14,9 +15,11 @@
 \XeTeXlinebreaklocale "zh"                      % 针对中文进行断行
 \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt  % 给予TeX断行一定自由度
 \linespread{1.5}                                % 1.5倍行距
-
+\setcounter{page}{0}
 \begin{document}
 \tableofcontents
+%\pagestyle{empty} 　　　　%第二頁以後頁碼空白
+\thispagestyle{empty} 　　　%首頁頁碼空白 　
 \author{Your Name}
 \title{Test Document}
 \maketitle
@@ -25,7 +28,7 @@
 %\setlength{\parindent}{2em}%设置缩进
 
 This is a test document
-\\%换行
+\newline %换行
 %\begin{CJK*}{GBK}{song}
 
 测试一下我的数学公式\[\int_a^b f(x)dx\]
