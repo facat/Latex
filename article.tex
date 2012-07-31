@@ -17,7 +17,9 @@
 \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt  % 给予TeX断行一定自由度
 \linespread{1.5}                                % 1.5倍行距
 \setcounter{page}{0}
+\newcommand{\upcite}[1]{$^{\mbox{\scriptsize \cite{#1}}}$}%上标引用
 \begin{document}
+
 \tableofcontents
 %\pagestyle{empty} 　　　　%第二頁以後頁碼空白
 \thispagestyle{empty} 　　　%首頁頁碼空白 　
@@ -41,7 +43,20 @@ This is a test document
 
 到这里
 \footnote{一段的脚注}
-继续写
+继续写。
+\par
+引用一下\cite{zhangshan}
+%\newcommand{\upcite}[1]{$^{\mbox{\scriptsize \cite{#1}}}$}
+上标引用\upcite{zhangshan}
 %\end{CJK*}
+\begin{thebibliography}{9}
+\bibitem{zhangshan}
+Leslie Lamport,
+\emph{\LaTeX: A Document Preparation System}.
+Addison Wesley, Massachusetts,
+2nd Edition,
+1994.
+\end{thebibliography}
 
 \end{document}
+

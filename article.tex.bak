@@ -4,6 +4,7 @@
 \usepackage{geometry}
 \usepackage{amsmath}%调用数学包
 \usepackage{ccmap}                      % 使pdfLatex生成的文件支持复制等
+\usepackage{times}                       % 使用 Times New Roman 字体
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
 \usepackage{indentfirst}%设置缩进
@@ -24,6 +25,11 @@
 \title{Test Document}
 \maketitle
 \today %当日时间
+\begin{abstract}
+这是摘要
+\end{abstract}
+\vfill %用空白填充，使内容充满整页
+\textbf{关键词:} 学位论文，\LaTeX\ 模版，科技排版
 
 %\setlength{\parindent}{2em}%设置缩进
 
@@ -37,5 +43,14 @@ This is a test document
 \footnote{一段的脚注}
 继续写
 %\end{CJK*}
+\begin{thebibliography}{9}
+\bibitem{zhangshan}
+Leslie Lamport,
+\emph{\LaTeX: A Document Preparation System}.
+Addison Wesley, Massachusetts,
+2nd Edition,
+1994.
+\end{thebibliography}
 
 \end{document}
+
