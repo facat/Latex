@@ -6,13 +6,14 @@
 \usepackage{ccmap}                      % 使pdfLatex生成的文件支持复制等
 \usepackage{times}                       % 使用 Times New Roman 字体
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
-
 \usepackage{indentfirst}%设置缩进
 \usepackage{anysize}%设置16k
 \papersize{26cm}{18.4cm}%设置16k
 \marginsize{2.5cm}{2.1cm}{2cm}{2cm} %设置16k
 \usepackage{fontspec}%使用xetex
-\setmainfont[BoldFont=黑体]{宋体}               % 使用系统默认字体
+\usepackage{xunicode}
+\defaultfontfeatures{Mapping=tex-text} % To support LaTeX quoting style
+\setmainfont[BoldFont=黑体,ItalicFont={Times New Roman}]{宋体}               % 使用系统默认字体
 \XeTeXlinebreaklocale "zh"                      % 针对中文进行断行
 \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt  % 给予TeX断行一定自由度
 \linespread{1.5}                                % 1.5倍行距
@@ -46,8 +47,9 @@ This is a test document
 继续写。
 \par
 引用一下\cite{zhangshan}
-%\newcommand{\upcite}[1]{$^{\mbox{\scriptsize \cite{#1}}}$}
 上标引用\upcite{zhangshan}
+\par
+
 %\end{CJK*}
 \begin{thebibliography}{9}
 \bibitem{zhangshan}
